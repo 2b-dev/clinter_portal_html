@@ -1,338 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Cliniter</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="./css/css.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-        <div class="container">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/logo.png" class="logo" />
+        </a>
 
-            <a class="navbar-brand" href="index.html">
-                <img src="./images/logo.png" class="logo">
-            </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Service">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Screenshots">Screenshots</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Screenshots">Screenshots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <div class="view"
-        style="background-image: url('./images/backgrounds/bg-banner.png'); background-repeat: no-repeat; background-size: cover;">
-
-        <div class="filter-clinter"></div>
-        <div class="mask  d-flex justify-content-center align-items-center">
-
-            <div class="text-center white-text mx-5 wow fadeIn">
-                <p class="txtTitleCover">Clinter</p>
-                <p class="txtSubTitleCover">ระบบจัดการคลินิกครบวงจร ปรับแต่งได้ทุกความต้องการ
-                    <br>เพื่อคลินิกของท่านโดยเฉพาะ</p>
-                <button class="btn btn-trial">ทดลองใช้งานฟรี</button>
-            </div>
-
+    <div
+      class="view"
+      style="
+        background-image: url('./images/backgrounds/bg-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="filter-clinter"></div>
+      <div class="mask d-flex justify-content-center align-items-center">
+        <div class="text-center white-text mx-5 wow fadeIn">
+          <p class="txtTitleCover">Clinter</p>
+          <p class="txtSubTitleCover">
+            ระบบจัดการคลินิกครบวงจร ปรับแต่งได้ทุกความต้องการ
+            <br />เพื่อคลินิกของท่านโดยเฉพาะ
+          </p>
+          <button class="btn btn-trial">ทดลองใช้งานฟรี</button>
         </div>
-        <section class="sectionIntro">
-            <div class="boxIntro">
-                <p class="txtTitleIntro">ครบครันทุกการใช้งานบน Cliniter</p>
-                <p class="txtDetailIntro">ระบบจัดการคลินิกครบวงจร ปรับแต่งระบบได้ตามความต้องการเฉพาะคลินิกของท่าน
-                    ครอบคลุมมากกว่าคลินิกทั่วไป เช่น คลินิกเวชกรรม คลินิกทันตกรรม คลินิกความงาม คลินิกแพทย์แผนไทย
-                    และคลินิกรักษาสัตว์ ฯลฯ</p>
-            </div>
-        </section>
+      </div>
+      <section class="sectionIntro">
+        <div class="boxIntro">
+          <p class="txtTitleIntro">ครบครันทุกการใช้งานบน Cliniter</p>
+          <p class="txtDetailIntro">
+            ระบบจัดการคลินิกครบวงจร
+            ปรับแต่งระบบได้ตามความต้องการเฉพาะคลินิกของท่าน
+            ครอบคลุมมากกว่าคลินิกทั่วไป เช่น คลินิกเวชกรรม คลินิกทันตกรรม
+            คลินิกความงาม คลินิกแพทย์แผนไทย และคลินิกรักษาสัตว์ ฯลฯ
+          </p>
+        </div>
+      </section>
     </div>
 
     <main class="main">
-        <section class="sectionDetail">
-            <div class="typeCliniter">
-                <div class="container">
-                    <div class="row justify-content-around">
-                        <div class="col-12 col-md-6 col-lg-3 text-center mb-3">
-                            <div class="boxTypeProduct">
-                                <div class="containCircle">
-                                    <div class="circleProduct">
-                                        <div class="innerCircle">
-                                            <img src="./images/icons/type1.png">
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="txtProduct">ทัตกรรม</p>
-                                <p class="txtProductSub">Cliniter Dental</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center mb-3">
-                            <div class="boxTypeProduct">
-                                <div class="containCircle">
-                                    <div class="circleProduct">
-                                        <div class="innerCircle">
-                                            <img src="./images/icons/type2.png">
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="txtProduct">แพทย์แผนไทย</p>
-                                <p class="txtProductSub soon">Coming soon!</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center mb-3">
-                            <div class="boxTypeProduct">
-                                <div class="containCircle">
-                                    <div class="circleProduct">
-                                        <div class="innerCircle">
-                                            <img src="./images/icons/type3.png">
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="txtProduct">ความงาม</p>
-                                <p class="txtProductSub soon">Coming soon!</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center mb-3">
-                            <div class="boxTypeProduct">
-                                <div class="containCircle">
-                                    <div class="circleProduct">
-                                        <div class="innerCircle">
-                                            <img src="./images/icons/type4.png">
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="txtProduct">รักษาสัตว์</p>
-                                <p class="txtProductSub soon">Coming soon!</p>
-                            </div>
-                        </div>
+      <section class="sectionDetail">
+        <div class="typeCliniter">
+          <div class="container">
+            <div class="row justify-content-around">
+              <div class="col-12 col-md-6 col-lg-3 text-center mb-3">
+                <div class="boxTypeProduct">
+                  <div class="containCircle">
+                    <div class="circleProduct">
+                      <div class="innerCircle">
+                        <img src="./images/icons/type1.png" />
+                      </div>
                     </div>
+                  </div>
+                  <p class="txtProduct">ทัตกรรม</p>
+                  <p class="txtProductSub">Cliniter Dental</p>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 mb-5">
-                        <div class="boxEasyCustomize">
-                            <div class="linEascustomize"></div>
-                            <div class="dotLeft"></div>
-                            <div class="dotRight"></div>
-                            <div class="containEasyCustomize">
-                                <div class="boxIconEasycustomize">
-                                    <div class="innerIconEasycustomize">
-                                        <img src="./images/icons/easy_customize.png">
-                                    </div>
-                                </div>
-                                <div class="boxTxtEasycustomize">
-                                    <p class="txtTitleEasycustomize">Easy to Customize</p>
-                                    <p class="txtSubEasycustomize">สามารถที่จะกำหนดข้อมูลของคุณ ได้อย่างง่ายสะดวก
-                                        และรวดเร็ว</p>
-                                </div>
-                            </div>
-                        </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center mb-3">
+                <div class="boxTypeProduct">
+                  <div class="containCircle">
+                    <div class="circleProduct">
+                      <div class="innerCircle">
+                        <img src="./images/icons/type2.png" />
+                      </div>
                     </div>
-                    <div class="col-12 mt-5 mb-5">
-                        <div class="row justify-content-around">
-                            <div class="col-12 col-md-12 col-lg-5 text-center mb-3">
-                                <a data-fancybox href="./images/services/ipad.png"><img src="./images/services/ipad.png"
-                                        class="img-fluid"></a>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-5 mb-3">
-                                <p class="txtHighlight">จุดเด่น Cliniter</p>
-                                <ul class="ulHighlight">
-                                    <li>สะดวกในการจัดการข้อมูลต่าง ๆ ภายในคลินิก</li>
-                                    <li>ครอบคลุมทุกการทำงานของคลินิก</li>
-                                    <li>ประหยัดทรัพยากรและรายจ่ายของคลินิก</li>
-                                    <li>เพิ่มรายได้จากระบบจัดการขายของคลินิก</li>
-                                    <li>สร้างผู้ใช้งานได้ไม่จำกัดจำนวน</li>
-                                    <li>สามารถจัดการเช็คข้อมูลได้หลายสาขา ได้ทุกที่ทุกเวลา ทุกอุปกรณ์</li>
-                                    <li>Application สำหรับลูกค้า</li>
-                                </ul>
-                                <button class="btn btn-trial-highlight">ทดลองใช้งานฟรี</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-5 mb-5">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <p class="txtTitleHowDo">Cliniter ทำอะไรได้บ้าง ?</p>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-12 col-md-12 col-lg-4 mb-3">
-                                <ul class="ulHowDo">
-                                    <li>จัดการสาขาเชื่อมต่อข้อมูลผู้ป่วยกันทุกที่</li>
-                                    <li>ลงทะเบียนผู้ป่วย จากบัตรประจำตัวประชาชน</li>
-                                    <li>เก็บรูปถ่ายผู้ป่วยก่อน-หลังการรักษา</li>
-                                    <li>ใบรับรองแพทย์ที่รองรับทั้ง ไทย/อังกฤษ</li>
-                                    <li>นัดหมาย & ตารางเวรแพทย์</li>
-                                    <li>ผ่าน Google Calendar</li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-4 mb-3 text-center">
-                                <a data-fancybox href="./images/services/macbook.png"><img
-                                        src="./images/services/macbook.png" class="img-fluid"></a>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-4 mb-3">
-                                <ul class="ulHowDo">
-                                    <li>บริหารค่าใช้จ่ายของคลินิก</li>
-                                    <li>คลังสินค้า & ยา</li>
-                                    <li>สนับสนุนการขาย</li>
-                                    <li>รูปแบบรายงานมากว่า 10 รายงาน</li>
-                                    <li>Dashboard</li>
-                                    <li>ระบบ CRM</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                  <p class="txtProduct">แพทย์แผนไทย</p>
+                  <p class="txtProductSub soon">Coming soon!</p>
                 </div>
-            </div>
-        </section>
-        <section class="sectionScreenshot">
-            <div class="filter-clinter"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <div class="slider-for mb-4">
-                            <div>
-                                <a data-fancybox="screenshot" href="./images/screenshots/1.png">
-                                    <img src="./images/screenshots/1.png" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="screenshot" href="./images/screenshots/2.png">
-                                    <img src="./images/screenshots/2.png" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="screenshot" href="./images/screenshots/3.png">
-                                    <img src="./images/screenshots/3.png" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="screenshot" href="./images/screenshots/4.png">
-                                    <img src="./images/screenshots/4.png" class="img-fluid">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slider-nav">
-                            <div>
-                                <img src="./images/screenshots/1.png" class="img-fluid">
-                            </div>
-                            <div>
-                                <img src="./images/screenshots/2.png" class="img-fluid">
-                            </div>
-                            <div>
-                                <img src="./images/screenshots/3.png" class="img-fluid">
-                            </div>
-                            <div>
-                                <img src="./images/screenshots/4.png" class="img-fluid">
-                            </div>
-                        </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center mb-3">
+                <div class="boxTypeProduct">
+                  <div class="containCircle">
+                    <div class="circleProduct">
+                      <div class="innerCircle">
+                        <img src="./images/icons/type3.png" />
+                      </div>
                     </div>
+                  </div>
+                  <p class="txtProduct">ความงาม</p>
+                  <p class="txtProductSub soon">Coming soon!</p>
                 </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 text-center mb-3">
+                <div class="boxTypeProduct">
+                  <div class="containCircle">
+                    <div class="circleProduct">
+                      <div class="innerCircle">
+                        <img src="./images/icons/type4.png" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="txtProduct">รักษาสัตว์</p>
+                  <p class="txtProductSub soon">Coming soon!</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-5">
+              <div class="boxEasyCustomize">
+                <div class="linEascustomize"></div>
+                <div class="dotLeft"></div>
+                <div class="dotRight"></div>
+                <div class="containEasyCustomize">
+                  <div class="boxIconEasycustomize">
+                    <div class="innerIconEasycustomize">
+                      <img src="./images/icons/easy_customize.png" />
+                    </div>
+                  </div>
+                  <div class="boxTxtEasycustomize">
+                    <p class="txtTitleEasycustomize">Easy to Customize</p>
+                    <p class="txtSubEasycustomize">
+                      สามารถที่จะกำหนดข้อมูลของคุณ ได้อย่างง่ายสะดวก และรวดเร็ว
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-5 mb-5">
+              <div class="row justify-content-around">
+                <div class="col-12 col-md-12 col-lg-5 text-center mb-3">
+                  <a data-fancybox href="./images/services/ipad.png"
+                    ><img src="./images/services/ipad.png" class="img-fluid"
+                  /></a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-5 mb-3">
+                  <p class="txtHighlight">จุดเด่น Cliniter</p>
+                  <ul class="ulHighlight">
+                    <li>สะดวกในการจัดการข้อมูลต่าง ๆ ภายในคลินิก</li>
+                    <li>ครอบคลุมทุกการทำงานของคลินิก</li>
+                    <li>ประหยัดทรัพยากรและรายจ่ายของคลินิก</li>
+                    <li>เพิ่มรายได้จากระบบจัดการขายของคลินิก</li>
+                    <li>สร้างผู้ใช้งานได้ไม่จำกัดจำนวน</li>
+                    <li>
+                      สามารถจัดการเช็คข้อมูลได้หลายสาขา ได้ทุกที่ทุกเวลา
+                      ทุกอุปกรณ์
+                    </li>
+                    <li>Application สำหรับลูกค้า</li>
+                  </ul>
+                  <button class="btn btn-trial-highlight">
+                    ทดลองใช้งานฟรี
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-5 mb-5">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p class="txtTitleHowDo">Cliniter ทำอะไรได้บ้าง ?</p>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                  <ul class="ulHowDo">
+                    <li>จัดการสาขาเชื่อมต่อข้อมูลผู้ป่วยกันทุกที่</li>
+                    <li>ลงทะเบียนผู้ป่วย จากบัตรประจำตัวประชาชน</li>
+                    <li>เก็บรูปถ่ายผู้ป่วยก่อน-หลังการรักษา</li>
+                    <li>ใบรับรองแพทย์ที่รองรับทั้ง ไทย/อังกฤษ</li>
+                    <li>นัดหมาย & ตารางเวรแพทย์</li>
+                    <li>ผ่าน Google Calendar</li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-3 text-center">
+                  <a data-fancybox href="./images/services/macbook.png"
+                    ><img src="./images/services/macbook.png" class="img-fluid"
+                  /></a>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                  <ul class="ulHowDo">
+                    <li>บริหารค่าใช้จ่ายของคลินิก</li>
+                    <li>คลังสินค้า & ยา</li>
+                    <li>สนับสนุนการขาย</li>
+                    <li>รูปแบบรายงานมากว่า 10 รายงาน</li>
+                    <li>Dashboard</li>
+                    <li>ระบบ CRM</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionScreenshot mb-5">
+        <div class="filter-clinter"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-10 col-lg-8">
+              <div class="slider-for mb-4">
+                <div>
+                  <a
+                    data-fancybox="screenshot"
+                    href="./images/screenshots/1.png"
+                  >
+                    <img src="./images/screenshots/1.png" class="img-fluid" />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    data-fancybox="screenshot"
+                    href="./images/screenshots/2.png"
+                  >
+                    <img src="./images/screenshots/2.png" class="img-fluid" />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    data-fancybox="screenshot"
+                    href="./images/screenshots/3.png"
+                  >
+                    <img src="./images/screenshots/3.png" class="img-fluid" />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    data-fancybox="screenshot"
+                    href="./images/screenshots/4.png"
+                  >
+                    <img src="./images/screenshots/4.png" class="img-fluid" />
+                  </a>
+                </div>
+              </div>
+              <div class="slider-nav">
+                <div>
+                  <img src="./images/screenshots/1.png" class="img-fluid" />
+                </div>
+                <div>
+                  <img src="./images/screenshots/2.png" class="img-fluid" />
+                </div>
+                <div>
+                  <img src="./images/screenshots/3.png" class="img-fluid" />
+                </div>
+                <div>
+                  <img src="./images/screenshots/4.png" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionAttribute pt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="txtTitleAttribute">คุณลักษณะของ Cliniter</p>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-12 col-lg-4 mb-3">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-12">
+                  <div class="boxAttribute">
+                    <div class="boxDetail">
+                      Responsive Design
+                      <div class="circleAttibute">
+                        <img src="./images/attributes/check.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 mb-3">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-12">
+                  <div class="boxAttribute">
+                    <div class="boxDetail">
+                      Support All Browser
+                      <div class="circleAttibute">
+                        <img src="./images/attributes/landing-page.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 mb-3">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-12">
+                  <div class="boxAttribute">
+                    <div class="boxDetail">
+                      Customize
+                      <div class="circleAttibute">
+                        <img src="./images/attributes/maintenance.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionMap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15503.452005379644!2d100.4956275!3d13.726743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3703c5340e652d29!2sKNACX%20Corporation%20Limited!5e0!3m2!1sth!2sth!4v1595098326071!5m2!1sth!2sth"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <div class="dFrmContact">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="card cardContact">
+                  <div class="card-body">
+                    <p class="txtTitleContact">สอบถามเพิ่มเติม</p>
+                    <div class="row">
+                      <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <div class="md-form">
+                          <input type="text" id="nameIp" class="form-control" />
+                          <label for="nameIp">ชื่อ<span>*</span></label>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <div class="md-form">
+                          <input
+                            type="email"
+                            id="emailIp"
+                            class="form-control"
+                          />
+                          <label for="emailIp">อีเมล<span>*</span></label>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <div class="md-form">
+                          <input type="tel" id="telIp" class="form-control" />
+                          <label for="telIp">โทรศัพท์<span>*</span></label>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-10 col-lg-10 mb-3">
+                        <div class="md-form">
+                          <input
+                            type="text"
+                            id="commentIp"
+                            class="form-control"
+                          />
+                          <label for="commentIp"
+                            >ความคิดเห็น<span>*</span></label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-2 col-lg-2 text-center">
+                        <button class="btn btnSendContact">
+                          <img src="./images/icons/send.png" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!--Main layout-->
 
     <!--Footer-->
-    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-        <!--Call to action-->
-        <div class="pt-4">
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
-                target="_blank" role="button">Download MDB
-                <i class="fas fa-download ml-2"></i>
+    <footer class="footerCliniter">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <p class="txtDetailFooter pin">
+              218 Chintawatchai Building<br />Ladya Road, Khlongsan,<br />
+              Bangkok 10600<br />Thailand
+            </p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <p class="txtDetailFooter phone">
+              062-998-4524,<br />02-047-0693<br />จ.-ศ. 09:00-18:00 น.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <p class="txtDetailFooter mail">contact@cliniter.com</p>
+          </div>
+          <div class="col-12 col-md-12 text-center col-lg-3 mb-3">
+            <a href="#" target="_blank">
+              <img src="./images/footer/line.png" class="iconSocialFooter" />
             </a>
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank"
-                role="button">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
+            <a href="#" target="_blank">
+              <img
+                src="./images/footer/facebook.png"
+                class="iconSocialFooter"
+              />
             </a>
+          </div>
         </div>
-        <!--/.Call to action-->
-
-        <hr class="my-4">
-
-        <!-- Social icons -->
-        <div class="pb-4">
-            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-                <i class="fab fa-facebook-f mr-3"></i>
-            </a>
-
-            <a href="https://twitter.com/MDBootstrap" target="_blank">
-                <i class="fab fa-twitter mr-3"></i>
-            </a>
-
-            <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-                <i class="fab fa-youtube mr-3"></i>
-            </a>
-
-            <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-                <i class="fab fa-google-plus-g mr-3"></i>
-            </a>
-
-            <a href="https://dribbble.com/mdbootstrap" target="_blank">
-                <i class="fab fa-dribbble mr-3"></i>
-            </a>
-
-            <a href="https://pinterest.com/mdbootstrap" target="_blank">
-                <i class="fab fa-pinterest mr-3"></i>
-            </a>
-
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-                <i class="fab fa-github mr-3"></i>
-            </a>
-
-            <a href="http://codepen.io/mdbootstrap/" target="_blank">
-                <i class="fab fa-codepen mr-3"></i>
-            </a>
+      </div>
+      <hr class="mx-2" />
+      <div class="containter">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="txtCopyRight">
+              Copyright © 2020. Cliniter | All rights reserved.
+            </p>
+          </div>
         </div>
-        <!-- Social icons -->
-
-        <!--Copyright-->
-        <div class="footer-copyright py-3">
-            © 2019 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
-        </div>
-        <!--/.Copyright-->
-
+      </div>
     </footer>
-</body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="./js/main.js"></script>
-
+  </body>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script type="text/javascript" src="./js/main.js"></script>
 </html>

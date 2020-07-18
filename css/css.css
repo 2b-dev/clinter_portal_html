@@ -16,6 +16,7 @@ html {
   box-shadow: none;
   -webkit-box-shadow: none;
   -ms-box-shadow: none;
+  width: 100vw;
 }
 .navbar-brand .logo {
   width: 90px;
@@ -357,6 +358,24 @@ main.main {
   background-color: #27c3ec;
   border-radius: 1rem;
 }
+.txtTitleAttribute {
+  color: #003057;
+  font-size: 32px;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+}
+.txtTitleAttribute::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 30%;
+  right: 30%;
+  width: 40%;
+  height: 5px;
+  background-color: #27c3ec;
+  border-radius: 1rem;
+}
 .ulHowDo {
   list-style: none;
   margin-bottom: 0;
@@ -417,6 +436,168 @@ main.main {
 .slick-prev:before, .slick-next::before{
   content: '';
 }
+.boxAttribute{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.boxAttribute .boxDetail{
+  width: calc(100% - 55px);
+  height: 140px;
+  background-color: #32689b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.boxAttribute .boxDetail .circleAttibute{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #003057;
+  left: -50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxAttribute .boxDetail .circleAttibute img{
+  max-width: 50%;
+  max-height: 50%;
+}
+.sectionMap{
+  position: relative;
+  margin-top: 3rem;
+  background-color: #32689b;
+}
+.dFrmContact{
+  position: absolute;
+  width: 100%;
+  top: 300px;
+}
+.cardContact{
+  border-radius: 1rem;
+}
+.txtTitleContact{
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+.btnSendContact{
+  padding: 0 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #27c3ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnSendContact img{
+  width: 50%;
+}
+.footerCliniter{
+  background-color: #32689b;
+  padding-top: 220px;
+}
+.txtDetailFooter{
+  padding-left: 55px;
+  font-size: 16px;
+  color: #ffffff;
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+  min-height: 50px;
+  margin-bottom: 0;
+}
+.txtDetailFooter.pin{
+  background-image: url('../images/footer/pin-round.png');
+}
+.txtDetailFooter.phone{
+  background-image: url('../images/footer/call-phone.png');
+}
+.txtDetailFooter.mail{
+  background-image: url('../images/footer/mail.png');
+}
+.iconSocialFooter{
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.txtCopyRight{
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.card .md-form label span{
+  color: #ff0000;
+}
+@media (max-width: 767px){
+  .txtTitleCover{
+    font-size: 40px;
+  }
+  .txtSubTitleCover{
+    font-size: 24px;
+  }
+  .view {
+    height: 100%;
+    overflow: visible;
+  }
+  .boxIntro{
+    width: 100%;
+    background-color: #32689b;
+    background-image: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .txtTitleIntro{
+    font-size: 20px;
+  }
+  .txtDetailIntro{
+    font-size: 14px;
+  }
+  .typeCliniter{
+    position: relative;
+  }
+  .sectionDetail{
+    padding-top: 1rem;
+  }
+  main.main{
+    margin-top: 190px;
+  }
+  .boxEasyCustomize .containEasyCustomize{
+    flex-direction: column;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+  }
+  .boxEasyCustomize .containEasyCustomize .boxTxtEasycustomize{
+    width: 90%;
+    padding: 1rem 1.5rem;
+  }
+  .boxEasyCustomize .containEasyCustomize .boxTxtEasycustomize .txtTitleEasycustomize{
+    font-size: 22px;
+  }
+  .boxEasyCustomize .containEasyCustomize .boxTxtEasycustomize .txtSubEasycustomize{
+    font-size: 18px;
+  }
+  .dFrmContact{
+    position: relative;
+    top: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .btnSendContact{
+    margin: 0 auto
+  }
+  .footerCliniter{
+    padding-top: 2rem;
+  }
+}
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: #27c3ec;
@@ -433,5 +614,19 @@ main.main {
   .navbar.navbar-dark .navbar-nav .nav-item {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .typeCliniter{
+    position: relative;
+  }
+  .sectionDetail{
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1300px){
+  .boxIntro{
+    width: 90%;
+    background-color: #32689b;
   }
 }
