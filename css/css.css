@@ -119,7 +119,8 @@ html {
 }
 .boxIntro {
   background-image: url("../images/backgrounds/bg_intro.png");
-  width: 60%;
+  width: 80%;
+  max-width: 1200px;
   background-repeat: no-repeat;
   padding-top: 3rem;
   padding-left: 2.5rem;
@@ -627,5 +628,12 @@ main.main {
   .boxIntro{
     width: 90%;
     background-color: #32689b;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px){
+  .view{
+    height: 80%;
+    min-height: 700px;
   }
 }
